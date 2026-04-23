@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FF Beta Verif By Minn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial; background: #0f0f0f; color: white; text-align: center; padding: 30px; }
+        .box { background: #1c1c1c; padding: 25px; border-radius: 15px; max-width: 400px; margin: 20px auto; border: 2px solid #ffba00; }
+        input { padding: 12px; width: 85%; margin: 15px 0; border-radius: 8px; border: 1px solid #444; font-size: 16px; background: #2a2a2a; color: white; }
+        button { padding: 12px 35px; background: #ffba00; border: none; border-radius: 8px; font-weight: bold; font-size: 16px; color: black; }
+        .hasil { margin-top: 20px; font-weight: bold; font-size: 18px; min-height: 25px; }
+        .disclaimer { font-size: 11px; color: #777; margin-top: 25px; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>🔥 CEK ID FF BETA 🔥</h2>
+        <p>Masukin ID Free Fire lu buat cek status</p>
+        <input type="number" id="idff" placeholder="Contoh: 123456789">
+        <br>
+        <button onclick="cekID()">CEK STATUS BETA</button>
+        <div class="hasil" id="hasil"></div>
+        <p class="disclaimer">*Web ini cuma buat seru-seruan, bukan official Garena.<br>Official: ff-advance.ff.garena.com</p>
+    </div>
+
+    <script>
+        function cekID() {
+            var id = document.getElementById('idff').value;
+            var hasil = document.getElementById('hasil');
+            if(id == "") {
+                hasil.innerHTML = "❌ Masukkan ID dulu min";
+                hasil.style.color = "#ff4444";
+            } else {
+                hasil.innerHTML = "✅ Selamat! ID " + id + " Terdaftar FF Beta";
+                hasil.style.color = "#00ff00";
+            }
+        }
+    </script>
+</body>
+</html>
